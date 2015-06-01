@@ -56,9 +56,17 @@ nav li a {
   text-decoration: none;
 }
 nav li a:hover {
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-  color: #FB000D;
+  color: #003842;
 }
 section {
 	margin: 5%;
+}
+
+footer nav {
+  position: fixed;
+  font-size: 1.1em;
+  margin: 10px;
+  bottom: -2px;
+  color: #003842;
+  left: 40%;
 }
