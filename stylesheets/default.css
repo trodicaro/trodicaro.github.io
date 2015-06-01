@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Lobster";
+  src: local("Lobster"), url("lobster.woff") format("woff");
+}
+
+
+body {
+	background-color: #BCD0C4;
+	font-family: "Lobster", "Comic Sans", cursive;
+	color: black;
+}
+
+#thumb_rodica {
+	position: fixed;
+	width: 10%;
+}
+
+header {
+  background-color: #003842;
+  padding: 10px;
+}
+
+header nav {
+  float: right;
+  font-size: 1.2em;
+  margin-left: 20px;
+}
+header nav li {
+  line-height: 155px;
+}
+header nav a {
+  border-radius: 6px;
+}
+header nav a:hover {
+  background-color: #fff;
+}
+
+header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1 {
+	text-align: center;
+	padding-top: 50px;
+}
+
+nav li {
+  float: left;
+}
+nav li a {
+  color: #fff;
+  margin: 0 10px;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+nav li a:hover {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  color: #FB000D;
+}
+section {
+	margin: 5%;
+}
