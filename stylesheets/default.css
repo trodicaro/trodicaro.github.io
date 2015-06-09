@@ -27,6 +27,7 @@ header nav {
 }
 header nav li {
   line-height: 155px;
+  list-style: none;
 }
 header nav a {
   border-radius: 6px;
@@ -69,4 +70,8 @@ footer nav {
   bottom: -2px;
   color: #003842;
   left: 40%;
+}
+
+footer nav li {
+    list-style: none;
 }
