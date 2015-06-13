@@ -4,20 +4,22 @@
 }
 
 
+
 body {
 	background-color: #BCD0C4;
 	font-family: "Lobster", "Comic Sans", cursive;
 	color: black;
 }
 
+
+/*header*/
 #thumb_rodica {
 	position: fixed;
-	width: 10%;
+	width: 7em;
 }
 
 header {
   background-color: #003842;
-  padding: 10px;
 }
 
 header nav {
@@ -26,7 +28,7 @@ header nav {
   margin-left: 20px;
 }
 header nav li {
-  line-height: 155px;
+  line-height: 5em;
   list-style: none;
 }
 header nav a {
@@ -34,6 +36,7 @@ header nav a {
 }
 header nav a:hover {
   background-color: #fff;
+  color: #003842;
 }
 
 header:after {
@@ -42,11 +45,17 @@ header:after {
   clear: both;
 }
 
+/*main*/
 h1 {
 	text-align: center;
 	padding-top: 50px;
 }
 
+section {
+  margin: 5%;
+}
+
+/*blog*/
 nav li {
   float: left;
 }
@@ -56,22 +65,50 @@ nav li a {
   padding: 5px 10px;
   text-decoration: none;
 }
-nav li a:hover {
-  color: #003842;
-}
-section {
-	margin: 5%;
+
+#blog_list {
+   list-style-image: url(../imgs/article_scaled.png);
 }
 
+#blog_list a:link {
+  color: black;
+  text-decoration: none;
+}
+
+#blog_list a:visited {
+  color: #3E576D;
+}
+
+#blog_list a:hover {
+  color: #EC474B;
+}
+
+/*footer*/
 footer nav {
+  margin-left: 35%;
   position: fixed;
-  font-size: 1.1em;
-  margin: 10px;
-  bottom: -2px;
-  color: #003842;
-  left: 40%;
+  bottom: -1px;
 }
 
 footer nav li {
-    list-style: none;
+  list-style: none;
 }
+
+.social {
+  list-style: none;
+  width: 50px;
+  height: 50px;
+}
+
+/*
+Ocean sunset color scheme
+https://color.adobe.com/ocean-sunset-color-theme-4696752/;
+dark-blue: #003842
+light-blue: #97BFBE
+blue-gray: #BCD0C4
+grey: #DDCDB8
+pink: #FFC9A7
+red: #EC474B
+turqouise: #6EC1A7
+another-blue: #EC474B;
+*/
