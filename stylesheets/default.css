@@ -3,14 +3,11 @@
   src: local("Lobster"), url("lobster.woff") format("woff");
 }
 
-
-
 body {
 	background-color: #BCD0C4;
 	font-family: "Lobster", "Comic Sans", cursive;
 	color: #003842;
 }
-
 
 /*header*/
 #thumb_rodica {
@@ -64,12 +61,12 @@ nav li {
   float: left;
 }
 
-a:link {
+p a:link {
   color: #3E576D;
   text-decoration: none;
 }
 
-a:visited {
+p a:visited {
   color: #97BFBE;
 }
 
@@ -122,5 +119,5 @@ grey: #DDCDB8
 pink: #FFC9A7
 red: #EC474B
 turqouise: #6EC1A7
-another-blue: #EC474B;
+another-blue: #3E576D;
 */
