@@ -8,7 +8,7 @@
 body {
 	background-color: #BCD0C4;
 	font-family: "Lobster", "Comic Sans", cursive;
-	color: black;
+	color: #003842;
 }
 
 
@@ -33,6 +33,10 @@ header nav li {
 }
 header nav a {
   border-radius: 6px;
+  color: #fff;
+  margin: 0 10px;
+  padding: 5px 10px;
+  text-decoration: none;
 }
 header nav a:hover {
   background-color: #fff;
@@ -55,23 +59,27 @@ section {
   margin: 5%;
 }
 
-/*blog*/
+/*navigation bars*/
 nav li {
   float: left;
 }
-nav li a {
-  color: #fff;
-  margin: 0 10px;
-  padding: 5px 10px;
+
+a:link {
+  color: #3E576D;
   text-decoration: none;
 }
 
+a:visited {
+  color: #97BFBE;
+}
+
+/*blog*/
 #blog_list {
    list-style-image: url(../imgs/article_scaled.png);
 }
 
 #blog_list a:link {
-  color: black;
+  color: #003842;
   text-decoration: none;
 }
 
@@ -81,6 +89,9 @@ nav li a {
 
 #blog_list a:hover {
   color: #EC474B;
+}
+pre {
+  background-color: #DDCDB8;
 }
 
 /*footer*/
@@ -92,10 +103,11 @@ footer nav {
 
 footer nav li {
   list-style: none;
+  margin: 0 10px;
+  padding: 5px 10px;
 }
 
 .social {
-  list-style: none;
   width: 50px;
   height: 50px;
 }
