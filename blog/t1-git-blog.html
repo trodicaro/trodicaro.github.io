@@ -8,21 +8,36 @@
 
 <main>
   <h1>Version Control</h1>
-  <h2>How to step back in time</h2>
+  <h2>Branching and remotes with Git</h2>
   <h4>05/24/15</h4>
 
   <section>  
-      <p>
-        Version control is software that keeps track of changes in your work.
-      </p>
+    <p>
+      Version control is software that keeps track of changes in your work.
+    </p>
 
-      <p>
-        For each commit command Git stores a reference number (HEAD) that is kept in the log and can be used to retreive the info.
-      </p> 
-      <p>
-        GitHub is one of the online services that uses Git version control. It serves as both work-in-teams platform and storage/showcase site. It facilitates work on projects by all the branching and merging features. And it double up as a storage for user's projects. Plus it generates webpages too :)
+    <p>
+      For each commit command Git stores a reference number (HEAD) that is kept in the log and can be used to retreive the info.
+    </p> 
+    <p>
+      GitHub is one of the online services that uses Git version control. It serves as both work-in-teams platform and storage/showcase site. It facilitates work on projects by all the branching and merging features. And it double up as a storage for user's projects. Plus it generates webpages too :)
+    </p>
+
+    <p> Here's a few git commands that I find very useful:
+      <ul>
+        <li><code>git checkout -b rodica</code> - move to     rodica branch (and create it if doesn’t exist)</li>
+        <li><code>git branch</code> - show on branch I currently am in</li>
+        <li><code>git remote -v</code> - show what remotes I have set up</li>
+        <li>edit the remote:
+          <ul>
+            <li>add: <code>git remote add origin https://github.com/trodicaro/hiphop.git</code></li>
+            <li>change: <code>git remote set-url origin https://github.com/trodicaro/hiphop.git</code></li>
+            <li>delete: <code>git remote remove origin</code></li>
+          </ul>
+          </li>
+        </ul>
       </p>
-  </section>
+    </section>
 </main>
 
 <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="trodicaro.github.io">Tweet</a>

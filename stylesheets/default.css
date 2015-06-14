@@ -87,7 +87,8 @@ p a:visited {
 #blog_list a:hover {
   color: #EC474B;
 }
-pre {
+
+code {
   background-color: #DDCDB8;
 }
 
