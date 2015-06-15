@@ -13,20 +13,34 @@
 
   <section>  
     <p>
-    
-    </p>
-
+    Method summary: groups - by result of block - returns a hash
+    </p>      
     <p>
- 
+      <img src = "../imgs/group_by_docs.png">
     </p> 
-
     <p>
+      I used it to replace this block of code:
+      <pre><code>
+      def mode(array)
+        hash = {}
+        solution_array = []
+        array.each {|i| hash[i] ||= array.count(i)}
+        max_count = hash.values.max
+        hash.each {|k,v| solution_array << k if v == max_count}
+        return solution_array
+      end</pre></code>
     
-    </p>
 
-    <p> Here's a few that I find very useful:
-   
-    </section>
+      After using group_by:
+      <pre><code>
+      def mode(array)
+        return [] if array.empty?
+        groups = array.group_by{ |e| e }.values
+        max_count = groups.max_by{ |set| set.count }.count
+        groups.select{ |set| set.size == max_count }.map{|set| set.first }
+      end</code></pre>
+    </p>
+  </section>
 </main>
 
 <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="trodicaro.github.io">Tweet</a>
