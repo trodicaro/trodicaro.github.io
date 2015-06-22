@@ -9,22 +9,50 @@
 <main>
   <h1>Ruby Classes</h1>
   <h2>When, why, and how to use classes</h2>
-  <h4>06/19/15</h4>
+  <h4>06/21/15</h4>
 
   <section>
-	<p>
+	<p>Let's take a look at a simple class I built:
 	</p>
-	<p>
+	
+	<p><img src="../imgs/sample_child_class_crop.png" alt = "child class">
 	</p>
 
-	<pre><code></code></pre>
-	<pre><code></code></pre>
-	<p>
+	<p>And the accompanying output:
 	</p>
-	<p>
+
+	<p><img src="../imgs/class_example_output_crop.png" alt = "ouput">
 	</p>
-	<pre><code></code></pre>
-	<pre><code></code></pre>
+
+	<p>This is a simple, yet relevant example of how a class can be used. Using a class is recommended when the object is more complex than an array (think lined up cubbies) or a hash (think dictionary).
+	</p>
+	
+	<p>A class has attributes and behaviors:
+		<ul>
+			<li>attributes: age, name</li>
+			<li>behaviors: says_hello, cries </li>
+		</ul>
+	</p>
+
+	<p>Line 3 is the better form of:
+	<pre><code>def name(name)
+	@name
+end</code></pre>
+
+	<p>Line 4 is the better form of:
+	<pre><code>def age(age)
+	@age
+end
+def age=(age)
+	@age = age
+end</code></pre>
+
+	<p>Lines 22 and 23 are creating 2 new instances of the child object. The following 2 lines of code are calling methods associated with these objects. Last couple lines of code show how the age accessor works: setter on line 28 and getter on line 29.
+	</p>
+
+	<p>These are a few of the most commonly encountered operations with classes. Hope you find the description useful!
+	</p>
+	
   </section>
 
   <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="trodicaro.github.io">Tweet</a>
