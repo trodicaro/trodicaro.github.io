@@ -14,11 +14,11 @@
   <section>
     <p>In Ruby we have the following types of variables:
     <pre>
-    - global: <code>$global_var = 5</code>
-    - instance: <code>@instance_var = 5</code>
-    - class: <code>@@class_var = 5</code>
-    - constant: <code>CONSTANT = 5</code>
-    - local: <code>local_var = 5</code>
+    - global: <code>$global_var = 5</code>. Visible accross all code in the program.
+    - instance: <code>@instance_var = 5</code>. Visible in the instance of the object.
+    - class: <code>@@class_var = 5</code>. Visible to all instances of the object.
+    - constant: <code>CONSTANT = 5</code>. Visible accross all code in the program. Will send warnings if we attempt to change their value.
+    - local: <code>local_var = 5</code> Visible only in the local block or method.
     </pre>
     </p> The most used are the instance and the local variables. The use of global variables can have major implications and is recommended to be avoided.
     <p>
