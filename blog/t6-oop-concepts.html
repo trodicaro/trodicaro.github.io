@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <head>
-  <title>Object Oriented Concepts</title>
+  <title>Variable Scope</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
   <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 </head>
 
 <main>
-  <h1>Object Oriented Concepts</h1>
-  <h2>OO vs Functional Programming</h2>
+  <h1>Variable Scope</h1>
+  <h2>Local, instance or global?</h2>
   <h4>07/05/15</h4>
 
   <section>
-    <p>
-    </p>
+    <p>In Ruby we have the following types of variables:
+    <pre>
+    - global: <code>$global_var = 5</code>
+    - instance: <code>@instance_var = 5</code>
+    - class: <code>@@class_var = 5</code>
+    - constant: <code>CONSTANT = 5</code>
+    - local: <code>local_var = 5</code>
+    </pre>
+    </p> The most used are the instance and the local variables. The use of global variables can have major implications and is recommended to be avoided.
     <p>
     </p>
     <p>
