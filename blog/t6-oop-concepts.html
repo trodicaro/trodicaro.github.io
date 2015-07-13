@@ -1,3 +1,5 @@
+<!--  http://zetcode.com/lang/rubytutorial/variables/ -->
+<!-- http://zetcode.com/lang/rubytutorial/oop/ -->
 <!DOCTYPE html>
 <head>
   <title>Variable Scope</title>
@@ -21,30 +23,21 @@
     - local: <code>local_var = 5</code> Visible only in the local block or method.
     </pre>
     </p> The most used are the instance and the local variables. The use of global variables can have major implications and is recommended to be avoided.
-    <p>
     </p>
-    <p>
+    <p> Below is a sample of code running all types of variables. 
     </p>
-    <p>
+    <p><img src="../imgs/variable_types.png" alt="Example" height = "1000px">
     </p>
-    <p>
+    <p>The local_var is not carried over from the var_definitions.rb file via 'require'.
     </p>
-  </section>
-
-  <section>
-  <p>
-  </p>
-  <p>
-  </p>
-
-  <pre><code></code></pre>
-  <pre><code></code></pre>
-  <p>
-  </p>
-  <p>
-  </p>
-  <pre><code></code></pre>
-  <pre><code></code></pre>
+    <p>I've addapted the Child class to have a "parent class" so we can take a closer look at the class variable concept:
+    </p>
+    <p><img src="../imgs/inheritance _and_class_variable.png" alt="Class variable" height = "1000px">
+    </p>
+    <p>The <code>@@count</code> variable is incremented every time either a Human or a Child instance are created. <code>child.show_count</code> is not a method defined in the Child class, but it then goes up the inheritance line and searches for the <code>show_count</code> in the Human class. It finds it and puts the value that <code>@@count</code> stores.
+    </p>
+    <p>I hope this article was useful to peruse and feel free to <a href="mailto:trodicaro@gmail.com">email me </a> / <a href = "https://twitter.com/trodicaro"> twitter </a> with feedback.
+    </p>
   </section>
 
   <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="trodicaro.github.io">Tweet</a>
