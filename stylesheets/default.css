@@ -10,6 +10,10 @@ body {
 	color: #003842;
 }
 
+q {
+  font-style: italic;
+}
+
 /*header*/
 #thumb_rodica {
 	position: fixed;
