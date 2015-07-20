@@ -1,0 +1,35 @@
+<!-- worked with Tom; spent 2 hrs -->
+<!doctype html>
+<html>
+<head>
+  <title>>Our Cheatsheet</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <header >Ruby Enumerables Cheat-sheet</header>
+
+  <section class="left" >
+    <h5><code>group_by { |obj| block } → a_hash</code></h5>
+    <p>Groups the collection by result of the block. Returns a hash where the keys are the evaluated result from the block and the values are arrays of elements in the collection that correspond to the key.</p>
+    <p>If no block is given an enumerator is returned.</p>  
+  </section>
+
+  <section class="left">
+    <h5><code>invert → new_hash</code></h5>
+    <p>Returns a new hash created by using hsh’s values as keys, and the keys as values.</p>
+  </section>
+  
+  <section class="right">
+    <h5><code>each_with_index {|(*args), idx| ... }</code></h5>
+    <p>If no block is given, a new Enumerator is returned that includes the index.</p>
+  </section>
+
+  <section class="right">
+    <h5><code>rotate(cnt=1) → new_ary</code></h5>
+    <p>Returns new array by rotating self so that the element at cnt in self is the first element of the new array. If cnt is negative then it rotates in the opposite direction.</p>
+  </section>
+
+</body>
+</html>

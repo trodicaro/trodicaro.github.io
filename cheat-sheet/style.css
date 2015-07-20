@@ -1,0 +1,36 @@
+body{
+  background-color: lightgray;
+}
+
+header{
+  font-size: 2em;
+  /*border: 1px solid black;*/
+  text-align: center;
+  /*width: 55%;*/
+
+}
+
+code{
+  font-size: 1.5em;
+  background-color: lightgray;
+}
+
+section {
+  background-color: beige;
+  height: 250px;
+  border: 1px solid black;
+  border-radius: 10%;
+  width: 35%;
+  padding: 3%;
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: left;
+}
